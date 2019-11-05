@@ -96,9 +96,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         val markerOptions = MarkerOptions().position(location)
 
         val titleStr = getAddress(location)  // add these two lines
-        markerOptions.title(titleStr)
+        //markerOptions.title(titleStr)
 
         map.addMarker(markerOptions)
+            //.title(titleStr)
     }
 
     private fun getAddress(latLng: LatLng): String {
